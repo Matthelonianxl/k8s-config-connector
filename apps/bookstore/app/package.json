@@ -19,7 +19,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "4.0.3",
-    "@angular/common": "4.0.3",
+    "@angular/common": "4.4.7",
     "@angular/compiler": "4.0.3",
     "@angular/compiler-cli": "4.0.3",
     "@angular/core": "4.0.3",
