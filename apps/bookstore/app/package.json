@@ -14,7 +14,9 @@
     "start": "node app.js",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "private": true,
   "dependencies": {
@@ -37,7 +39,8 @@
     "google-cloud": "^0.47.0",
     "request": "^2.34",
     "rxjs": "^5.1.0",
-    "zone.js": "^0.7.6"
+    "zone.js": "^0.7.6",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0",
@@ -69,5 +72,6 @@
     "tslint.json",
     "karma.conf.js",
     "protractor.conf.js"
-  ]
+  ],
+  "snyk": true
 }
