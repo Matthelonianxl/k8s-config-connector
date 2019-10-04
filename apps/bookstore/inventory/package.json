@@ -4,7 +4,9 @@
   "description": "An example implementation of a simple bookstore inventory API.",
   "main": "inventory.js",
   "scripts": {
-    "start": "node inventory.js"
+    "start": "node inventory.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git"
@@ -15,7 +17,8 @@
     "@google-cloud/spanner": "^1.5.0",
     "body-parser": "^1.15.2",
     "express": "^4.14",
-    "mysql": "^2.11.1"
+    "mysql": "^2.11.1",
+    "snyk": "^1.230.5"
   },
   "engines": {
     "node": ">=4.6"
@@ -26,5 +29,6 @@
     "appengine.js",
     "package.json",
     "swagger.json"
-  ]
+  ],
+  "snyk": true
 }
