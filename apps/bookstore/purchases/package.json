@@ -4,7 +4,9 @@
   "description": "An example implementation of a simple purchase API.",
   "main": "purchases.js",
   "scripts": {
-    "start": "node purchases.js"
+    "start": "node purchases.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git"
@@ -16,10 +18,11 @@
     "express": "^4.14",
     "mysql": "^2.11.1",
     "request": "^2.34",
-    "request-promise": "^4.1.1"
+    "request-promise": "^4.1.1",
+    "snyk": "^1.316.1"
   },
-  "engines" : {
-    "node" : ">=4.6"
+  "engines": {
+    "node": ">=4.6"
   },
   "files": [
     "README.md",
@@ -27,5 +30,6 @@
     "appengine.js",
     "package.json",
     "swagger.json"
-  ]
+  ],
+  "snyk": true
 }
