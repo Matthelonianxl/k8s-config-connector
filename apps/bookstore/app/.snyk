@@ -1,0 +1,38 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - '@google-cloud/pubsub > google-gax > lodash':
+        patched: '2020-05-01T06:47:08.052Z'
+    - '@google-cloud/pubsub > google-auto-auth > async > lodash':
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/vision > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/vision > google-gax > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - '@google-cloud/pubsub > @google-cloud/common > google-auto-auth > async > lodash':
+        patched: '2020-05-01T06:47:08.052Z'
+    - '@google-cloud/pubsub > @google-cloud/common > split-array-stream > async > lodash':
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/spanner > split-array-stream > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - '@google-cloud/pubsub > google-gax > google-auto-auth > async > lodash':
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/vision > @google-cloud/common > split-array-stream > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/spanner > checkpoint-stream > split-array-stream > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/vision > @google-cloud/common > google-auto-auth > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/vision > google-gax > google-auto-auth > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/compute > gce-images > google-auto-auth > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/storage > gcs-resumable-upload > google-auto-auth > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/spanner > @google-cloud/common-grpc > @google-cloud/common > split-array-stream > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
+    - google-cloud > @google-cloud/spanner > @google-cloud/common-grpc > @google-cloud/common > google-auto-auth > async > lodash:
+        patched: '2020-05-01T06:47:08.052Z'
